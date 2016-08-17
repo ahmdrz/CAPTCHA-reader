@@ -4,7 +4,7 @@ A simple code to read capcha + machine learning
 ## Warning
 I use a scrapper for downloading some capchas
 
-In this case , my source capcha creator is [this link](student.iaun.ac.ir)
+In this case , my source capcha creator is [this link](http://student.iaun.ac.ir)
 
 The source of scrapper is in main.py
 
