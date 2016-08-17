@@ -11,9 +11,9 @@ The source of scrapper is in main.py
 **This is a tutorial of machine learning and i haven't any interfere in bad works with these codes.**
 
 ## Samples 
-1. https://i.imgsafe.org/424d080c3e.jpg
-2. https://i.imgsafe.org/424d12ea82.jpg
-3. https://i.imgsafe.org/424d20429a.jpg
-4. https://i.imgsafe.org/424d27e329.jpg
-5. https://i.imgsafe.org/424d337027.jpg
+1. <img src="https://i.imgsafe.org/424d080c3e.jpg" style="width:200px;height:50px;"/>
+2. <img src="https://i.imgsafe.org/424d12ea82.jpg" style="width:200px;height:50px;"/>
+3. <img src="https://i.imgsafe.org/424d20429a.jpg" style="width:200px;height:50px;"/>
+4. <img src="https://i.imgsafe.org/424d27e329.jpg" style="width:200px;height:50px;"/>
+5. <img src="https://i.imgsafe.org/424d337027.jpg" style="width:200px;height:50px;"/>
 6. more samples in samples directory
