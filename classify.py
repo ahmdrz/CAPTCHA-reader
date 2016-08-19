@@ -3,7 +3,7 @@ import numpy as np
 import sys
 
 if len(sys.argv) != 2 :
-    print "Usage readno <file>"
+    print "Usage classify <file>"
     sys.exit()
     
 print "File name : " + sys.argv[1]
@@ -21,8 +21,10 @@ model.train(samples,cv2.ml.ROW_SAMPLE, responses)
 
 image = cv2.imread(sys.argv[1])
 hsv = cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
-lower = np.array([28, 0, 0])
-upper = np.array([255, 19, 47])
+
+lower = np.array([28, 0, 0]) # lower hsv range
+upper = np.array([255, 19, 47]) # upper hsv range
+
 thresh = cv2.inRange(image, lower, upper)
 kernel = np.ones((3, 3), np.uint8)
 thresh = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)

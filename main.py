@@ -12,6 +12,6 @@ while True :
 	images = soup.find_all('img')
 	img = images[1]
 	link = url + "/" + img['src']
-	urllib.urlretrieve(link,str(i)+".jpg")
+	urllib.urlretrieve(link,'sample/' + str(i) + ".jpg")
 	time.sleep(1)
 
