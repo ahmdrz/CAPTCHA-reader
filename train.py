@@ -5,13 +5,13 @@ import cv2
 try :
     samples =  np.empty((0, 100))
     responses = []
-    keys = [i for i in range(48, 58)]
+    keys = [i for i in range(48, 58)] # range of keypad
     
-    for i in range(1,20):
-        image = cv2.imread(str(i) + '.jpg')
+    for i in range(1,20): # 20 is maximum samples in the directory
+        image = cv2.imread('samples/' + str(i) + '.jpg')
         hsv = cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
-        lower = np.array([28, 0, 0])
-        upper = np.array([255, 19, 47])
+        lower = np.array([28, 0, 0]) # lower hsv of numbers
+        upper = np.array([255, 19, 47]) # upper hsv of numbers
         thresh = cv2.inRange(image, lower, upper)
         kernel = np.ones((3, 3), np.uint8)
         thresh = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel) 
@@ -26,9 +26,9 @@ try :
                     cv2.rectangle(image, (x, y), (x+w, y+h), (0, 0, 255), 2)                
                     roi = backupt[y:y+h, x:x+w]
                     roi_small = cv2.resize(roi, (10, 10))
-                    cv2.imshow('norm', roi_small)                
+                    cv2.imshow('norm', roi_small)
                     key = cv2.waitKey(0)
-                    key = key - 1114032 + 48
+                    key = key - 1114032 + 48 # the number that you will be enter !
                     print str(x) + " , " + str(y) + " , " + str(w) + " , " + str(h) + " : " + str(key)                    
                     if key == 27:
                         sys.exit()
