@@ -18,4 +18,6 @@ The source of scrapper is in main.py
 5. <img src="https://i.imgsafe.org/424d337027.jpg" style="width:200px;height:50px;"/>
 6. more samples in samples directory
 
+Numbers are easy to read by robots :)
+
 ### See the wiki in [this link](https://github.com/ahmdrz/capcha-reader/wiki)
